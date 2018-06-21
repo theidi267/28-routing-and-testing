@@ -55,7 +55,7 @@ export default class App extends React.Component {
               }
             />
           </main>
-          <Footer footerText="You hit rock bottom" />
+          <Footer footerText="What a pretty color!" />
         </React.Fragment>
       </BrowserRouter>
     );
