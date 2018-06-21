@@ -1,9 +1,10 @@
 import React from 'react';
 import {BrowserRouter,Route} from 'react-router-dom';
+import Dashboard from './dashboard/dashboard.js';
 
 import Header from './header/header.js';
 import Footer from './footer/footer.js';
-import Home from './home/home.js';
+import Landing from './landing/landing.js';
 import Items from './items/items.js';
 import Item from './item/item.js';
 import '../style/app.scss';
@@ -35,9 +36,9 @@ export default class App extends React.Component {
     return (
       <BrowserRouter>
         <React.Fragment>
-          <Header title="Our Basic App" />
+          <Header title="Our Basic App" />     
           <main>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Landing} />
             <Route exact path="/items"
               component={() =>
                 <Items
@@ -46,6 +47,7 @@ export default class App extends React.Component {
                 />
               }
             />
+            <Route path="/dashboard" component={Dashboard}/>
             <Route path="/item/:id"
               component={(props) =>
                 <Item

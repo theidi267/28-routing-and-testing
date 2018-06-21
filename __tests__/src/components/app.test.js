@@ -5,7 +5,7 @@ import App from '../../../src/components/app.js';
 
 describe('<App/> (Enzyme Test)', () => {
   it('is alive at application start', () => {
-    let app = shallow(<App/>);
+    let app = shallow(<App/>); //eslint-disable-line
     expect(app.find('main').exists()).toBeTruthy();
     expect(app.find('h2').exists()).toBeTruthy();
   });
@@ -20,6 +20,5 @@ describe('<App/> (Snapshot Test)', () => {
     let tree = component.toJSON();
 
     expect(tree).toMatchSnapshot();
-
   });
 });
