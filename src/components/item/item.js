@@ -12,5 +12,4 @@ export default class Item extends React.Component {
       <span>{this.props.items[this.props.match.params.id]}</span>
     );
   }
-
 }
