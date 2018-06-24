@@ -6,8 +6,7 @@ import App from '../../../src/components/app.js';
 describe('<App/> (Enzyme Test)', () => {
   it('is alive at application start', () => {
     let app = shallow(<App/>); //eslint-disable-line
-    expect(app.find('main').exists()).toBeTruthy();
-    expect(app.find('h2').exists()).toBeTruthy();
+    expect(app.find('main').exists()).toBeTruthy(); //just checks if main renders
   });
 });
 
