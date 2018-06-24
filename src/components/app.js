@@ -8,6 +8,7 @@ import Landing from './landing/landing.js';
 import Items from './items/items.js';
 import Item from './item/item.js';
 import '../style/app.scss';
+import Noteform from './noteform/noteform.js';
 
 export default class App extends React.Component {
 
@@ -56,6 +57,7 @@ export default class App extends React.Component {
                 />
               }
             />
+            <Route exact path="/noteform" component={Noteform}/>
           </main>
           <Footer footerText="What a pretty color!" />
         </React.Fragment>
