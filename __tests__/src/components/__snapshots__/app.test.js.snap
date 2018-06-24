@@ -6,15 +6,29 @@ Array [
     <h2>
       Our Basic App
     </h2>
+    <ul>
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/dashboard"
+          onClick={[Function]}
+        >
+          Dashboard
+        </a>
+      </li>
+    </ul>
   </header>,
-  <main>
-    <h2>
-      Welcome Home
-    </h2>
-  </main>,
+  <main />,
   <footer>
     <h3>
-      You hit rock bottom
+      What a pretty color!
     </h3>
   </footer>,
 ]
