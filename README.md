@@ -55,7 +55,3 @@ Standard JavaScript with ES6, SASS, CSS, HTML
 * Step 5. In the Header click on the 'Dashboard' link that takes you to create an item.
 * Step 6. Click on the created item to view details.
 
-
-* Code Fellows
-* Catherine Looper for the readme example
-* Background by SVGBackgrounds.com
