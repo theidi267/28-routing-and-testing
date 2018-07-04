@@ -1,4 +1,3 @@
-
 'use strict';
 
 const merge = require('webpack-merge');
@@ -10,7 +9,7 @@ webpackProdConfig.module = {};
 webpackProdConfig.mode = 'production';
 
 webpackProdConfig.plugins = [
-  new MiniCssPlugin({
+  new MiniCssPlugin ({
     filename: '[name].[hash].css',
   }),
 ];

@@ -1,31 +1,34 @@
 import superagent from 'superagent';
 
 export const fetchData = (url) => {
+        
   return getCache(url)
-    .then( data => data )
-    .catch( err => {
+    .then(data => data)
+    .catch(err => {
       return superagent.get(url)
-        .then(result => {
+        .then(result => { 
           setCache(url, result.body);
-          return result.body;
+          return result.body; 
         })
-        .catch(console.error);
+        .catch(console.log);
     })
     .then(data => data);
 };
 
-const getCache = (key) => {
+export const getCache = (key) => {
+        
   return new Promise( (resolve,reject) => {
     let data = localStorage.getItem(key);
-    if(data) { resolve(JSON.parse(data)); }
-    else { reject('Invalid Key'); }
-  });
+    if ( data ) { resolve( JSON.parse(data)); }
+    else { reject('Invalid cache key', key); }
+  });    
 };
-
-const setCache = (key,data) => {
+    
+export const setCache = (key, value) => {
+        
   return new Promise( (resolve,reject) => {
-    let safeValue = typeof data === 'string' ? data : JSON.stringify(data);
-    localStorage.setItem(key,safeValue);
+    let safeValue = typeof value === 'string' ? value : JSON.stringify(value);
+    localStorage.setItem(key, safeValue);
     resolve();
-  });
+  });    
 };
