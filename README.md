@@ -13,7 +13,7 @@ Timea Heidenreich
 
 ### Project
 
-This application accomlishes the task of generating a TODO list.
+This application accomplishes the task of generating a TODO list.
 the homepage sescribes the app, the dashboard links to a form page where the user can create a new item on their todo list, the item displays under the form and on click redirects to its own detal page.
 
 
